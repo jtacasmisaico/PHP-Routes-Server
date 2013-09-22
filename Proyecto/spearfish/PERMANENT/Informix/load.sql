@@ -1,0 +1,9 @@
+load from "main.asc" insert into stf1_main;
+load from "person1.asc" insert into stf1_person1;
+load from "person2.asc" insert into stf1_person2;
+load from "person3.asc" insert into stf1_person3;
+load from "person4.asc" insert into stf1_person4;
+load from "house1.asc" insert into stf1_house1;
+load from "house2.asc" insert into stf1_house2;
+load from "type1.asc" insert into type1;
+load from "type7.asc" insert into type7

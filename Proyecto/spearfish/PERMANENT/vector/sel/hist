@@ -1,0 +1,3 @@
+COMMAND: v.in.ascii -n input="/opt/lampp/htdocs/Proyecto/coordenadas.txt" output="sel" format="standard" fs="|" skip=0 x=1 y=2 z=0 cat=0
+GISDBASE: /opt/lampp/htdocs/Proyecto
+LOCATION: spearfish MAPSET: PERMANENT USER: nobody DATE: Tue Dec 15 10:10:16 2009

@@ -1,0 +1,44 @@
+HISTORY
+
+----- Spearfish 5.7:
+25 May 2004
+- re-converted again all maps to match current 
+  GRASS internal vector format
+
+  M. Neteler
+
+14 April 2004:
+- converted all vector maps to 5.7 vector format
+  Attributes stored in DBF files.
+- converted all sites  maps to 5.7 vector format
+  Attributes stored in DBF files.
+
+  M. Neteler
+
+----- Spearfish 5.3:
+
+3 March 2004:
+- added
+  * elevation.10m (USGS Seamless server)
+  * landcover.30m (USGS Seamless server) [landcover.orig is identical, but without legend]
+  * soils.Kfactor replaced (to avoid no data areas)
+
+  M. Neteler/H. Mitasova
+
+------ Spearfish 5.0:
+
+4 Jun 2003:
+- fixed PROJ_INFO
+
+  P. Kelly
+
+11 Feb 2003:
+- fixed topology error for soils (v)
+- fixed vector type error for roads
+
+  M. Neteler
+
+------ Spearfish 4.0
+
+[ original CERL package ]
+

@@ -1,0 +1,254 @@
+east:       592382.75
+north:      4926405.36 
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:OFF LIMITS         
+east:       595759.63
+north:      4925748.74
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:N. CANTONMENT AREA   
+east:       604858.46
+north:      4922090.45
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:ARTILLERY IMPACT AREA
+east:       604300.58
+north:      4917142.38
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:RESTRICTED AREA
+east:       592101.34 
+north:      4922700.17 
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:1
+east:       594657.45
+north:      4923872.70
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:2
+east:       592945.56
+north:      4920988.27
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:3
+east:       594118.09
+north:      4922020.10
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:4
+east:       592101.34
+north:      4918174.20
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes 
+
+text:5
+east:       592734.51
+north:      4916391.96
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes 
+
+text:6
+east:       593250.42
+north:      4918244.56
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:7
+east:       596134.84
+north:      4922371.86
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:8
+east:       594845.06
+north:      4918432.16
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+ 
+text:9 
+east:       596908.71
+north:      4919909.55
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:10
+east:       600355.95
+north:      4922536.01
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:11
+east:       600144.89
+north:      4924201.01
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:12
+east:       600144.89
+north:      4919698.49
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:13
+east:       600918.76
+north:      4917447.24
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white 
+border:     red
+opaque:     yes
+
+text:14
+east:       594540.20
+north:      4915711.89
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:15
+east:       596252.09
+north:      4915711.89
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:16
+east:       597307.37
+north:      4916884.42
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:17
+east:       600449.75
+north:      4915688.44
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+
+text:18
+
+east:       605773.03
+north:      4915149.08
+ref:        center
+color:      black
+size:       250
+width:      1
+background: white
+border:     red
+opaque:     yes
+ 
+text:S. CANTONMENT AREA

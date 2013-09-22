@@ -1,0 +1,205 @@
+MAP
+
+#This file contains the map definitions
+
+
+# Copyright 2010 Álvaro Ortega Cabeza & Universidad de Granada
+ 
+# This file is part of SRS.
+
+# SRS is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+NAME GRASS
+STATUS ON
+SIZE 500 400
+SYMBOLSET /opt/lampp/map-script/marker.sym
+
+#Spearfish 589989.584 4914056.867 608960.726 4927980.311
+#           W          S          E           N
+EXTENT   589980     4913700    609000      4928010
+UNITS METERS
+
+# Start of web interface definition
+WEB
+# reference HTML file:
+  TEMPLATE /opt/lampp/htdocs/Proyecto/main.html
+#temp data absolute path:
+  IMAGEPATH /opt/lampp/htdocs/Proyecto/tmp/mapserver/
+#temp data relative path:
+  IMAGEURL "/Proyecto/tmp/mapserver/"
+# max/min zoom:
+  MINSCALE 1500
+  MAXSCALE 155000
+END # Web
+
+# Start of scalebar
+SCALEBAR
+  IMAGECOLOR 255 225 204
+TRANSPARENT ON
+  LABEL
+    COLOR 0 0 0
+    SIZE tiny
+  END
+  STYLE 0
+  SIZE 100 3
+  COLOR 255 0 0
+  OUTLINECOLOR 0 0 0
+  UNITS KILOMETERS 
+  INTERVALS 3
+  STATUS ON
+END
+
+# Start of legend
+LEGEND
+  KEYSIZE 18 12
+  IMAGECOLOR 255 225 204
+TRANSPARENT ON
+  LABEL
+    TYPE BITMAP
+    SIZE MEDIUM
+    COLOR 0 0 87
+  END
+  STATUS ON
+END
+
+# the order here: first is below, following on top
+
+#raster layer available in GeoTIFF (8bit recommened):
+# r.out.tiff -t in=elevation.dem out=elevation
+# convert -colors 256 elevation.tif elevation2.tif
+# mv elevation2.tif elevation.tif
+LAYER
+  NAME dem
+  TYPE RASTER
+  STATUS DEFAULT
+  OFFSITE 0 0 0
+#switch off map at certain min scale (1:1000):
+  MINSCALE 1000
+  DATA "/opt/lampp/htdocs/Proyecto/spearfish/elevation.tif"
+END
+
+
+#GRASS raster map directly from location (8bit only):
+LAYER
+  NAME soils
+  TYPE RASTER
+  STATUS ON
+  DATA "/opt/lampp/htdocs/Proyecto/spearfish/PERMANENT/cellhd/soils"
+END # Layer
+
+#vector layer in SHAPE:
+#v.out.shape map=roads type=line pref=roads cats=string
+LAYER
+  NAME roads
+  TYPE LINE
+  STATUS ON
+  DATA "/opt/lampp/htdocs/Proyecto/spearfish/roads"
+  TOLERANCE 5
+  LABELITEM CAT_ID
+  TEMPLATE /opt/lampp/htdocs/Proyecto/spearfish/roads.html
+  OFFSITE 0 0 0
+  CLASS
+    NAME "Road"
+    COLOR 80 80 80
+    LABEL 
+      POSITION CC
+      SIZE SMALL
+      COLOR 0 0 225
+    END
+  END
+END
+
+#vector layer in SHAPE:
+#v.out.shape map=rutes type=line pref=rutes cats=string
+#Cambiar la ruta
+LAYER
+  NAME rutes
+  TYPE LINE
+  STATUS ON
+  DATA "/opt/lampp/htdocs/Proyecto/spearfish/PERMANENT/vectoriales/rutes"
+  TOLERANCE 5
+  #LABELITEM CAT_ID
+  OFFSITE 0 0 0
+  CLASS
+    NAME "Rutes"
+    COLOR 255 0 0
+    LABEL 
+      POSITION CC
+      SIZE SMALL
+      COLOR 0 0 225
+    END
+  END
+END
+
+#vector layer in SHAPE:
+#v.out.shape map=consulta type=line pref=consulta cats=string
+#Cambiar la ruta
+LAYER
+  NAME consulta
+  TYPE LINE
+  STATUS ON
+  DATA "/opt/lampp/htdocs/Proyecto/spearfish/PERMANENT/vectoriales/consulta"
+  TOLERANCE 5
+  #LABELITEM CAT_ID
+  OFFSITE 0 0 0
+  CLASS
+    NAME "Consulta"
+    COLOR 80 80 80
+    LABEL 
+      POSITION CC
+      SIZE SMALL
+      COLOR 0 0 225
+    END
+  END
+END
+
+#vector layer in SHAPE:
+LAYER
+  NAME fields
+  TYPE POLYGON
+  STATUS ON
+  DATA "/opt/lampp/htdocs/Proyecto/spearfish/fields"
+  TOLERANCE 5
+  LABELITEM CAT_ID
+  TEMPLATE /opt/lampp/htdocs/Proyecto/spearfish/fields.html
+  CLASS
+    SYMBOL "pattern1"
+    NAME "Fields"
+    OUTLINECOLOR 100 50 0
+    COLOR 100 255 100
+    LABEL 
+      POSITION CC
+      SIZE SMALL
+      COLOR 0 255 0
+    END
+  END
+END
+
+REFERENCE
+  STATUS ON
+  IMAGE "/opt/lampp/htdocs/Proyecto/spearfish/refmap.png"
+  SIZE 187 150
+  EXTENT 589989.584 4914056.867 608960.726 4927980.311
+  #Ver para que sirven estas 2 etiquetas
+  MINBOXSIZE 5
+  MAXBOXSIZE 2000
+  COLOR -1 -1 -1
+  OUTLINECOLOR 255 0 0
+  #Ver para que sirve esto
+  #MARKERSIZE 8
+  #MARKER 'star'
+END
+
+END # Map File

@@ -1,0 +1,3 @@
+COMMAND: v.convert input="t.9961.300.bks" output="t_9961_300_bks" endian="big"
+GISDBASE: /ssi0/ssi/neteler/grassdata
+LOCATION: spearfish57 MAPSET: PERMANENT USER: neteler DATE: Tue May 25 09:44:49 2004

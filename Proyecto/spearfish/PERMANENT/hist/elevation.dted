@@ -1,0 +1,17 @@
+Tue Apr 21 11:56:35 1987 : elevation.dted
+DTED-1
+spearfish
+grass
+cell
+Digital Terain Elevation Data - Level 1 (DTED-1) produced by
+the Defense Mapping Agency and distributed by the USGS
+Elevation data above mean sea level for the spearfish database.
+
+DMA data is generated at a scale of 1:250,000.
+The original data resides on a half inch computer tape.  The
+data was extracted and processed into cell format using
+the DMA tape reading and processing tools provided by
+GRASS.  Elevation data on the tape was in meters above sea
+level and was rescaled into categories 1-241,243,245-251,254,
+255, with each category representing a unique interval of
+elevation above sea level in meters.

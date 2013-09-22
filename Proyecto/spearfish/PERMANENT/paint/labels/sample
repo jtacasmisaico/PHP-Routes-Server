@@ -1,0 +1,16 @@
+east:                597829
+north:               4921626
+xoffset:             
+yoffset:             
+ref:                 center
+color:               magenta
+size:                200
+width:               2
+hcolor:              white
+hwidth:              1
+background:          none
+border:              none
+opaque:              yes
+
+text:This is a\nlabel.
+

@@ -1,0 +1,19 @@
+COMMAND: v.in.ascii -n input="/opt/lampp/htdocs/Proyecto/coordenadas/1.txt" output="rutes" format="standard" fs="|" skip=0 x=1 y=2 z=0 cat=0
+GISDBASE: /opt/lampp/htdocs/Proyecto
+LOCATION: spearfish MAPSET: PERMANENT USER: nobody DATE: Fri Nov 20 14:23:02 2009
+---------------------------------------------------------------------------------
+COMMAND: v.patch -a input="rutes_aux" output="rutes"
+GISDBASE: /opt/lampp/htdocs/Proyecto
+LOCATION: spearfish MAPSET: PERMANENT USER: nobody DATE: Fri Nov 20 14:25:53 2009
+---------------------------------------------------------------------------------
+COMMAND: v.patch -a input="rutes_aux" output="rutes"
+GISDBASE: /opt/lampp/htdocs/Proyecto
+LOCATION: spearfish MAPSET: PERMANENT USER: nobody DATE: Sun Nov 22 14:16:01 2009
+---------------------------------------------------------------------------------
+COMMAND: v.patch -a input="rutes_aux" output="rutes"
+GISDBASE: /opt/lampp/htdocs/Proyecto
+LOCATION: spearfish MAPSET: PERMANENT USER: nobody DATE: Mon Nov 23 10:12:14 2009
+---------------------------------------------------------------------------------
+COMMAND: v.patch -a input="rutes_aux" output="rutes"
+GISDBASE: /opt/lampp/htdocs/Proyecto
+LOCATION: spearfish MAPSET: PERMANENT USER: nobody DATE: Sat Nov 28 13:41:03 2009

@@ -1,0 +1,3 @@
+COMMAND: v.convert input="t.rails" output="t_rails" endian="big"
+GISDBASE: /ssi0/ssi/neteler/grassdata
+LOCATION: spearfish57 MAPSET: PERMANENT USER: neteler DATE: Tue May 25 09:44:56 2004

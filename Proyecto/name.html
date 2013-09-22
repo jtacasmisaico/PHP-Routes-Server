@@ -1,0 +1,63 @@
+<!--
+# Copyright 2010 Álvaro Ortega Cabeza & Universidad de Granada
+ 
+# This file is part of SRS.
+
+# SRS is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Author" content="2008-2009 Alvaro Ortega - UGR">
+<title>SRS - GIS</title>
+<link href="/Proyecto/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body background="/Proyecto/images/bg.jpg" onload="javascript:document.getElementById('name').focus()" onkeypress="javascript:checkPulse(event);" onUnload="javascript:closeWindow();">
+
+
+<form method=GET id="formulario" action="" name="mainform">
+
+	Nombre de la ruta: <INPUT TYPE="text" NAME="name" id="name" value="">
+	<input type="button" name="mapName2" id="mapName2" value="submit" onClick="setName()"><br>
+
+</form>
+
+<script>
+function setName(){
+	window.opener.document.getElementById("mapName").value=document.getElementById("name").value;
+	window.opener.document.getElementById("Save_Map").disabled=false;
+	window.close();
+}
+
+function checkPulse(e){
+	if(e.keyCode==13){
+		if(document.getElementById("name").value==""){
+			document.getElementById("name").value="Ruta sin nombre";
+		}
+
+		setName();
+	}
+}
+
+function closeWindow(){
+	window.opener.document.getElementById("Save_Map").disabled=false;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!--
+# Copyright 2010 Álvaro Ortega Cabeza & Universidad de Granada
+ 
+# This file is part of SRS.
+
+# SRS is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Author" content="2008-2009 Alvaro Ortega - UGR">
+<title>SRS - GIS</title>
+<link href="/Proyecto/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body background="/Proyecto/images/bg.jpg" onload="javascript:document.getElementById('name').focus()" onkeypress="javascript:checkPulse(event);" onUnload="javascript:closeWindow();">
+
+
+<form method=GET id="formulario" action="/Proyecto/controller.php" name="mainform">
+
+	Nombre de la ruta: <INPUT TYPE="text" NAME="nameQuery" id="nameQuery" value=""><br>
+	Pendiente minima: <INPUT TYPE="text" NAME="pendmin" id="pendmin" value="" size="10"> Pendiente maxima:<INPUT TYPE="text" NAME="pendmax" id="pendmax" value="" size="10"><br>
+	Altura minima: <INPUT TYPE="text" NAME="altmin" id="altmin" value="" size="10"> Altura máxima: <INPUT TYPE="text" NAME="altmax" id="altmax" value="" size="10"><br>
+	Longitud minima: <INPUT TYPE="text" NAME="longmin" id="longmin" value="" size="10"> Longitud máxima: <INPUT TYPE="text" NAME="longmax" id="longmax" value="" size="10"><br>
+	
+	<input type="button" name="queryParams" id="queryParams" value="query" onClick="setName()"><br>
+
+	<input type="hidden" name="operationQuery" id="operationQuery" value="1">
+
+</form>
+
+<script>
+function setName(){
+	window.resizeTo(screen.width,screen.height); 
+	document.forms[0].submit();
+}
+
+function checkPulse(e){
+	if(e.keyCode==13){
+		if(document.getElementById("name").value==""){
+			document.getElementById("name").value="";
+		}
+
+		setName();
+	}
+}
+
+function closeWindow(){
+	window.opener.document.getElementById("operation4").checked=false;
+	window.opener.document.getElementById('myCanvas').style.display='none';
+}
+</script>
+
+</body>
+</html>

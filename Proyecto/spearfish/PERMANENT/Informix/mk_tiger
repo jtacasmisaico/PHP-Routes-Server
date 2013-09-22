@@ -1,0 +1,14 @@
+#!/bin/sh
+#	@(#) builds demonstration database for grass4.1 dbTools
+#
+isql - tiger.sql
+isql tiger main.sql
+isql tiger house1.sql
+isql tiger house2.sql
+isql tiger person1.sql
+isql tiger person2.sql
+isql tiger person3.sql
+isql tiger person4.sql
+isql tiger type1.sql
+isql tiger type7.sql
+isql tiger load.sql

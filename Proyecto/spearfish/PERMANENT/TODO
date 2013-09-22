@@ -1,0 +1,10 @@
+For the final release this has to be done (11/2001)
+             
+erode.index                
+ |    This map was created by dividing (@soils.Kfactor * 100)/@soils.
+ |    Tfactor. That map was then divided by 100 to get the real k/t
+ |    values.
+ 
+r.reclass in=slope out=slope.7
+1 thru 2 = 1
+...

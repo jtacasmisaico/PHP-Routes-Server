@@ -1,0 +1,47 @@
+This directory contains a series of programs and files
+which are used to create a demonstration relational 
+database.  This database can be used with the spearfish 
+gis data to test and evaluate the grass-informix interface
+which is part of the 4.1 release of GRASS. The data in
+the relational database represents the Census STF1 files
+and the type1 and type7 attribute data for the spearfish
+local. Examples showing the use of the dbtools in 
+conjunction with this database are provided in the
+directory ./dbsql.SAMPLES. In order to use the
+programs in this directory to build the sample database
+you must have a copy of the INFORMIX database products
+SE or On-Line and SQL on your system. In addition your 
+environment must be set up to access the INFORMIX binaries.
+The environment variable $INFORMIXDIR should be set to
+the directory location where the INFORMIX product has been
+installed and your $PATH environment variable should include
+$INFORMIXDIR/bin. 
+
+To build the sample database run the command mk_tiger. This
+program will create and populate the demonstration database
+in the current directory. 9 tables will be created:
+
+	stf1_main 20 rows
+ 
+	stf1_person1 20 row(s) loaded.
+ 			
+	stf1_person2 20 row(s) loaded.
+ 
+	stf1_person3 20 row(s) loaded.
+ 		
+	stf1_person4 20 row(s) loaded.	
+	 
+	stf1_house1 20 row(s) loaded.
+	 
+	stf1_house2 20 row(s) loaded.
+	 
+	type1 9139 row(s) loaded.
+	 
+	type7 56 row(s) loaded.
+
+The total disk space required for the database and the programs
+and data needed to build and populate it is approx 4.3 meg. Once
+the database has been built and populated remember to modify
+the environment variable $DBPATH to reflect the location of the
+new database (tiger).
+

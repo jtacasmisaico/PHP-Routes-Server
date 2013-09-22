@@ -1,0 +1,5 @@
+(name test2
+(and
+(group 17-21 (aspect))
+(group 1 (road.dist))
+))

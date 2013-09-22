@@ -1,0 +1,4 @@
+GV_DRIVER: dbf
+GV_DATABASE: $GISDBASE/$LOCATION_NAME/$MAPSET/dbf/
+DB_DRIVER: dbf
+DB_DATABASE: /opt/lampp/htdocs/Proyecto/spearfish/PERMANENT/dbf/
